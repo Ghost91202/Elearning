@@ -1,0 +1,357 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Meta -->
+    <title>code with trio</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="{% static 'css/colors.css' %}">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    {% comment %} Dark mode css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'nb.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'code.css' %}"> {% endcomment %}
+	<link rel="stylesheet" href="{% static 'nav2_0.css' %}">
+
+    <link rel="stylesheet" href="{% static 'book.css' %}">
+    <!-- Modernizer for Portfolio -->
+    
+    
+    <script src="{% static 'js/modernizer.js' %}"></script>
+    <script src="{% static 'js/pro.js' %}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="host_ersion"> 
+    {% comment %} class="header header_style_01" {% endcomment %}
+    <header  >
+        <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="liu navbar-dropdown">
+          <a class ="aoa" href="#">c</a>
+<!--           <div class="dropdown">
+            <a href="#">Tomato Soup</a>
+            <a href="#">Veg Manchow Soup</a>
+            <a href="#">Veg Hot Soup</a>
+          </div> -->
+        </li>
+        <li class="liu navbar-dropdown">
+          <a class ="aoa" href="#">c++</a>
+<!--           <div class="dropdown">
+            <a href="#">Ladoo</a>
+            <a href="#">Besan Ladoo</a>
+            <a href="#">Ghee Besan Ladoo</a>
+            <a href="#">Nariyal Ladoo</a>
+            <a href="#">Kaju Katli</a>
+            <a href="#">Rasgulla</a>
+          </div> -->
+        </li>
+        <li class="liu navbar-dropdown">
+          <a class ="aoa" href="#">java</a>
+<!--           <div class="dropdown">
+            <a href="#">Lachha Paratha</a>
+            <a href="#">Rumali Roti</a>
+            <a href="#">Tandoori Roti</a>
+            <a href="#">Butter Roti</a>
+            <a href="#">Plain Naan</a>
+            <a href="#">Butter Naan</a>
+          </div> -->
+        </li>
+        <li class="liu navbar-dropdown">
+          <a class ="aoa" href="#">python</a>
+<!--           <div class="dropdown">
+            <a href="#">Plain Rice</a>
+            <a href="#">Veg Pulao</a>
+            <a href="#">Veg Biryani</a>
+            <a href="#">Paneer Biryani</a>
+            <a href="#">Lemon Rice</a>
+            <a href="#">Veg Kashmiri Pulao</a>
+          </div> -->
+        </li>
+        <li class="liu navbar-dropdown">
+          <a class ="aoa" href="#">javascript</a>
+<!--           <div class="dropdown">
+            <a href="#">Paneer Chill Dry</a>
+            <a href="#">Paneer Garlic</a>
+            <a href="#">Veg Garlic</a>
+            <a href="#">Veg Chilli</a>
+          </div> -->
+        </li>
+         
+        <li class="liu navbar-dropdown">
+           <a class ="aoa" href="#">javascript</a></li>
+        <li class="liu navbar-dropdown">
+           <a class ="aoa" href="#">machine learning</a></li>
+        <li class="liu navbar-dropdown">
+           <a class ="aoa" href="#">AI</a></li>
+        <li class="liu navbar-dropdown">
+           <a class ="aoa" href="#">Django </a></li>
+        <li class=" liu navbar-dropdown">
+           <a class ="aoa" href="#">mangoDb</a></li>
+      </ul> 
+    </nav>
+        <nav id="navigation">
+  <a href="#" class="logo">CWT<span>+<span></a>
+  <ul class="links">
+<li><a href="{% url 'index' %}" >Home</a></li>  
+  <li class="dropdown"><a href="#" class="trigger-drop">Tutorials<i class="arrow"></i></a>
+      <ul class="drop">
+        <li><a href="{% url 'c_intro' %}" >C</a></li>
+        <li><a href="#">c++</a></li>
+        <li><a href="#">python</a></li>
+        <li><a href="#">java</a></li>
+      </ul>
+    </li>
+     <li class="dropdown"><a href="#" class="trigger-drop">practice<i class="arrow"></i></a>
+     <ul class="drop">
+       <li><a href="{% url 'c_intro' %}" >C example</a></li>
+       <li><a href="#">c++ example</a></li>
+       <li><a href="#">python example</a></li>
+       <li><a href="#">java</a></li>
+     </ul>
+   </li>
+    <li class="dropdown"><a href="#" class="trigger-drop">Contact<i class="arrow"></i></a>
+      <ul class="drop">
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Phone</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="trigger-drop">profile<i class="arrow"></i></a>
+  <ul class="drop"> 
+    <li><a href="{% url 'profile' %}">Dashboard</a></li>
+    {% comment %} <li><a href="#"> </a></li> {% endcomment %}
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+
+      </header>
+      
+
+    {% comment %} <nav class="nav"><!--Navigation Bar Starts Here--> {% endcomment %}
+    {% comment %} <ul class="pro"> {% endcomment %}
+{% comment %} <!--      <a href="#"><li><img src="https://www.logodesign.net/assets/images/new-ui/logo.png" alt=""></li></a><!--LOGO-->   {% endcomment %}
+      {% comment %} <a href="#" class="display-picture"><img src="https://i.pravatar.cc/85" alt=""></a><!--Profile Image--> {% endcomment %}
+      {% comment %} </ul > {% endcomment %}
+      {% comment %} <div class="card hidden"><!--ADD TOGGLE HIDDEN CLASS ATTRIBUTE HERE--> {% endcomment %}
+        {% comment %} <ul><!--MENU--> {% endcomment %}
+          {% comment %} <li><a href="#">Profile</li></a> {% endcomment %}
+          {% comment %} <li><a href="#">Account</li></a> {% endcomment %}
+          {% comment %} <li><a href="#">Settings</li></a> {% endcomment %}
+          {% comment %} <li><a href="#">Log Out</li></a> {% endcomment %}
+        {% comment %} </ul> {% endcomment %}
+      {% comment %} </div> {% endcomment %}
+  {% comment %} </nav><!--Navigation Bar Starts Here--> {% endcomment %}
+<!-- <h2>***Click on the Profile Image***</h2> -->
+        {% comment %} <nav class="megamenu navbar navbar-default"> {% endcomment %}
+            {% comment %} <div class="container"> {% endcomment %}
+                {% comment %} <div class="navbar-header"> {% endcomment %}
+                    {% comment %} <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> {% endcomment %}
+                        {% comment %} <span class="sr-only">Toggle navigation</span> {% endcomment %}
+                        {% comment %} <span class="icon-bar"></span> {% endcomment %}
+                        {% comment %} <span class="icon-bar"></span> {% endcomment %}
+                        {% comment %} <span class="icon-bar"></span> {% endcomment %}
+                    {% comment %} </button> {% endcomment %}
+                    {% comment %} <h1 style="margin-top: 30px;"><span>CWT</span></h1> {% endcomment %}
+                    {% comment %} <!-- <a class="navbar-brand" href="index.html"><img src="images/logos/logo-hosting.png" alt="image"></a> --> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+                            {% comment %} <nav> {% endcomment %}
+		{% comment %} <menu> {% endcomment %}
+            {% comment %} <menuitem><li><a href="{% url 'index' %}" >Home</a></li></menuitem> {% endcomment %}
+			{% comment %} <menuitem id="demo1"> {% endcomment %}
+                     {% comment %} <li><a >Tutorials</a></li><menu> {% endcomment %}
+					{% comment %} <menuitem><a>Interview center </a></menuitem> {% endcomment %}
+               {% comment %} <menuitem> {% endcomment %}
+                  {% comment %} <a>languages</a> {% endcomment %}
+                  {% comment %} <menu> {% endcomment %}
+                    {% comment %}  {% endcomment %}
+                     {% comment %} <menuitem><a href="{% url 'c_print' %}" >C</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a href="{% url 'c_print' %}" >C++</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a>Java</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a href="{% url 'profile' %}">Python</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a>Html</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a>Css</a></menuitem> {% endcomment %}
+                     {% comment %} <menuitem><a>Javascript</a></menuitem> {% endcomment %}
+                  {% comment %} </menu>   {% endcomment %}
+                  {% comment %}  {% endcomment %}
+               {% comment %} </menuitem> {% endcomment %}
+                {% comment %} <menuitem> {% endcomment %}
+            {% comment %} <a>DSA</a> {% endcomment %}
+                {% comment %} <menu> {% endcomment %}
+      {% comment %}  {% endcomment %}
+                      {% comment %} <menuitem><a>Array</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>linked list</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>Stack</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>Queue</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>Binary tree</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>Binary Search</a></menuitem> {% endcomment %}
+                      {% comment %} <menuitem><a>Heap</a></menuitem> {% endcomment %}
+                {% comment %} </menu>   {% endcomment %}
+    {% comment %}  {% endcomment %}
+                {% comment %} </menuitem> {% endcomment %}
+					{% comment %} <menuitem><a>help</a></menuitem> {% endcomment %}
+					{% comment %} <menuitem id="demo2"> {% endcomment %}
+						{% comment %} <a>Practice center</a> {% endcomment %}
+						{% comment %} <menu> {% endcomment %}
+							{% comment %} <menuitem id="demo3"> {% endcomment %}
+								{% comment %} <a>Problems</a> {% endcomment %}
+								{% comment %} <menu> {% endcomment %}
+									{% comment %} <menuitem><a>C Example </a></menuitem> {% endcomment %}
+									{% comment %} <menuitem><a>C++ Example</a></menuitem> {% endcomment %}
+									{% comment %} <menuitem><a>java Example</a></menuitem> {% endcomment %}
+								{% comment %} </menu> {% endcomment %}
+							{% comment %} </menuitem> {% endcomment %}
+							{% comment %} <menuitem><a>test</a></menuitem> {% endcomment %}
+						{% comment %} </menu> {% endcomment %}
+					{% comment %} </menuitem> {% endcomment %}
+				{% comment %} </menu> {% endcomment %}
+			{% comment %} </menuitem> {% endcomment %}
+            {% comment %} <menuitem id="demo1"> {% endcomment %}
+            	{% comment %} <a>contact</a> {% endcomment %}
+	                {% comment %} <menu> {% endcomment %}
+	                {% comment %} <menuitem id="demo2"> {% endcomment %}
+		                {% comment %} <a>Email</a> {% endcomment %}
+			                {% comment %} <menu> {% endcomment %}
+				            {% comment %} <menuitem><a>karansharma8543@gmal.com</a></menuitem> {% endcomment %}
+				            {% comment %} <menuitem><a>C++ Example</a></menuitem> {% endcomment %}
+				            {% comment %} <menuitem><a>java Example</a></menuitem> {% endcomment %}
+			                {% comment %} </menu> {% endcomment %}
+		                    {% comment %} </menuitem> {% endcomment %}
+                    {% comment %} <menuitem id="demo2"> {% endcomment %}
+                        {% comment %} <a>phone number</a> {% endcomment %}
+                            {% comment %} <menu> {% endcomment %}
+                                {% comment %} <menuitem><a>8543810264</a></menuitem> {% endcomment %}
+                                {% comment %} <menuitem><a>C++ Example</a></menuitem> {% endcomment %}
+                                {% comment %} <menuitem><a>java Example</a></menuitem> {% endcomment %}
+                            {% comment %} </menu> {% endcomment %}
+                    {% comment %} </menuitem> {% endcomment %}
+                    {% comment %} </menu> {% endcomment %}
+            {% comment %} </menuitem>          {% endcomment %}
+		{% comment %} </menu> {% endcomment %}
+	{% comment %} </nav> {% endcomment %}
+                {% comment %} <div id="navbar" class="navbar-collapse collapse"> {% endcomment %}
+                    {% comment %} <ul class="nav navbar-nav"> {% endcomment %}
+                        {% comment %} <li><a class="active" href="{% url 'index' %}" >Home</a></li> {% endcomment %}
+                        {% comment %} <li><a href="{% url 'features' %}">features</a></li> {% endcomment %}
+                        {% comment %} <!-- <li><a class="active" href=".html">Home</a></li> --> {% endcomment %}
+                        {% comment %} <!-- <li><a href="domain.html">Domain</a></li> --> {% endcomment %}
+                        {% comment %} <!-- <li><a href="hosting.html">Hosting</a></li> --> {% endcomment %}
+                        {% comment %} <!-- <li><a href="pricing.html">Pricing</a></li> --> {% endcomment %}
+                        {% comment %} <!-- <li><a href="testimonials.html">Testimonials</a></li> --> {% endcomment %}
+                        {% comment %} <li><a href="{% url 'contact' %}">Contact</a></li> {% endcomment %}
+                    {% comment %} </ul> {% endcomment %}
+                    {% comment %} <ul class="nav navbar-nav navbar-right"> {% endcomment %}
+                        {% comment %} <li><a class="btn-light btn-radius btn-brd log" href="#" data-toggle="modal" data-target="#login"><i class="flaticon-padlock"></i> Customer Login</a></i> {% endcomment %}
+                    {% comment %} </ul> {% endcomment %}
+                {% comment %} </div> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
+
+    </header>
+    {% block content %}{% endblock %}
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="{% static 'images/logos/logo-hosting-light.png' %}" alt="">
+                            <small>keep learning with trio</small>
+                        </div>
+                        <!-- <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p> -->
+                        <!-- <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p> -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				<div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3></h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <!-- <li><a href="#">Blog</a></li> -->
+                            <!-- <li><a href="#">Pricing</a></li> -->
+							<li><a href="#">About</a></li>
+							<!-- <li><a href="#">Faq</a></li> -->
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">karansharma8543@gmail.com</a></li>
+                            <li><a href="#"></a></li>
+                            <li>kanpur nagar </li>
+                            <li>8543810264</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                <div class="col-md-2 col-sm-2 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Social</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i> 22.543 Likes</a></li>
+                            <li><a href="#"><i class="fa fa-github"></i> 128 Projects</a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i> 12.860 Followers</a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i> 3312 Shots</a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i>3331 Pins</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">CWT</a> Design By : <a href="https://html.design/">TRIO</a></p>
+                </div>
+                <div class="footer-right">
+                    <form method="get" action="#">
+                        <input placeholder="Subscribe our newsletter.." name="search">
+                        <i class="fa fa-envelope-o"></i>
+                    </form>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

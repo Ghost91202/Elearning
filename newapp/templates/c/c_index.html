@@ -1,0 +1,181 @@
+ {% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
+    <link rel="stylesheet" href="{% static 'cwt.css' %}">
+{% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+  By <span>Patak</span>
+</p>
+	<div class="container">
+<nav>
+	<ul class="mcd-menu">
+			<li>
+				<a href="">
+					<i class="fa fa-home"></i>
+					<strong>Home</strong>
+					<small>code with trio</small>
+				</a>
+			</li>
+			<li>
+				<a href="{% static 'c_print' %}" class="active">
+					<i class="fa fa-edit"></i>
+					<strong>c</strong>
+					{% comment %} <small>keep learing</small> {% endcomment %}
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="fa fa-gift"></i>
+					<strong>c++</strong>
+					{% comment %} <small>sweet home</small> {% endcomment %}
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="fa fa-globe"></i>
+					<strong>java</strong>
+					{% comment %} <small>swe</small> {% endcomment %}
+				</a>
+			</li>
+			<li>
+	<a href="{% static 'python' %}">
+		<i class="fa fa-globe"></i>
+		<strong>python</strong>
+		{% comment %} <small>sweet home</small> {% endcomment %}
+	</a>
+</li>
+			<li>
+				<a href="">
+					<i class="fa fa-comments-o"></i>
+					<strong>DS</strong>
+					{% comment %} <small>what they say</small> {% endcomment %}
+				</a>
+				<ul>
+					<li><a href="#"><i class="fa fa-globe"></i>Araay</a></li>
+					<li>
+						<a href="#"><i class="fa fa-group"></i>Linked list</a>
+						{% comment %} <ul> {% endcomment %}
+							{% comment %} <li><a href="#"><i class="fa fa-female"></i>stack</a></li> {% endcomment %}
+							{% comment %} <li> {% endcomment %}
+								{% comment %} <a href="#"><i class="fa fa-male"></i>Queue/a> {% endcomment %}
+							{% comment %} </li> {% endcomment %}
+							{% comment %} <li><a href="#"><i class="fa fa-female"></i>heap</a></li> {% endcomment %}
+							{% comment %} <li><a href="#"><i class="fa fa-female"></i>hashing</a></li> {% endcomment %}
+							{% comment %} <li><a href="#"><i class="fa fa-female"></i>binary tree</a></li> {% endcomment %}
+						{% comment %} </ul> {% endcomment %}
+					</li>
+					<li><a href="#"><i class="fa fa-female"></i>stack</a></li>
+					<li><a href="#"><i class="fa fa-female"></i>queue</a></li>
+					<li><a href="#"><i class="fa fa-female"></i>heap</a></li>
+					<li><a href="#"><i class="fa fa-female"></i>hashing</a></li>
+					<li><a href="#"><i class="fa fa-female"></i>binary search</a></li>
+					<li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">
+					<i class="fa fa-picture-o"></i>
+					<strong>Portfolio</strong>
+					<small>sweet home</small>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="fa fa-envelope-o"></i>
+					<strong>Contacts</strong>
+					<small>drop a line</small>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+    
+{% comment %} <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> {% endcomment %}
+
+{% comment %} <nav role="navigation" class="primary-navigation" id="prg"> {% endcomment %}
+  {% comment %} <h1 ><span>CWT</span></h1> {% endcomment %}
+{% comment %} <ul class="childe1"> {% endcomment %}
+   {% comment %}  {% endcomment %}
+    {% comment %} <li class="childe2"><a href="#">c &dtrif;</a> {% endcomment %}
+      {% comment %} <ul class="dropdown"> {% endcomment %}
+        {% comment %} <li><a href="cintro.html">introduction of c</a></li> {% endcomment %}
+        {% comment %} <li><a href="cstarted.html">Started</a></li> {% endcomment %}
+        {% comment %} <li><a href="syntext.html">syntex of C</a></li> {% endcomment %}
+        {% comment %} <li><a href="compail.html">compailer of c</a></li> {% endcomment %}
+        {% comment %} <li><a href="printf.html">printf pf c</a></li> {% endcomment %}
+        {% comment %} <li><a href="veriabl.html">veriabl</a></li> {% endcomment %}
+        {% comment %} <li><a href="cintro.html">data type of c</a></li> {% endcomment %}
+        {% comment %} <li><a href="keyword.html">keyword of c </a></li> {% endcomment %}
+        {% comment %} <li><a href="syntext.html">syntex of C</a></li> {% endcomment %}
+        {% comment %} <li><a href="compail.html">compailer of c</a></li> {% endcomment %}
+        {% comment %} <li><a href="printf.html">printf pf c</a></li> {% endcomment %}
+        {% comment %} <li><a href="veriabl.html">veriabl</a></li> {% endcomment %}
+      {% comment %} </ul> {% endcomment %}
+{% comment %}  {% endcomment %}
+    {% comment %} </li> {% endcomment %}
+ {% comment %} <li><a href="#">c++ &dtrif;</a> {% endcomment %}
+      {% comment %} <ul class="dropdown"> {% endcomment %}
+        {% comment %} <li><a href="#">Web Development</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Web Design</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Illustration</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Iconography</a></li> {% endcomment %}
+      {% comment %} </ul> {% endcomment %}
+{% comment %}  {% endcomment %}
+    {% comment %} </li> {% endcomment %}
+ {% comment %} <li><a href="#">java &dtrif;</a> {% endcomment %}
+      {% comment %} <ul class="dropdown"> {% endcomment %}
+        {% comment %} <li><a href="#">Web Development</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Web Design</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Illustration</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Iconography</a></li> {% endcomment %}
+      {% comment %} </ul> {% endcomment %}
+{% comment %}  {% endcomment %}
+    {% comment %} </li> {% endcomment %}
+ {% comment %} <li><a href="#">python &dtrif;</a> {% endcomment %}
+      {% comment %} <ul class="dropdown"> {% endcomment %}
+        {% comment %} <li><a href="#">Web Development</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Web Design</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Illustration</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Iconography</a></li> {% endcomment %}
+      {% comment %} </ul> {% endcomment %}
+{% comment %}  {% endcomment %}
+    {% comment %} </li> {% endcomment %}
+ {% comment %} <li><a href="#">javascript &dtrif;</a> {% endcomment %}
+      {% comment %} <ul class="dropdown"> {% endcomment %}
+        {% comment %} <li><a href="#">Web Development</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Web Design</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Illustration</a></li> {% endcomment %}
+        {% comment %} <li><a href="#">Iconography</a></li> {% endcomment %}
+      {% comment %} </ul> {% endcomment %}
+{% comment %}  {% endcomment %}
+    {% comment %} </li> {% endcomment %}
+  {% comment %}  {% endcomment %}
+  {% comment %} </ul> {% endcomment %}
+{% comment %} </nav> {% endcomment %}
+<!-- artical of the c language -->
+{% comment %} <img src="logo/js.png" alt=""> {% endcomment %}
+</div>
+</body>
+</html>
+
+{% endblock %}

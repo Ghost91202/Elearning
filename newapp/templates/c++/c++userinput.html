@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>C++ User Input</h2>
+    <p>You have already learned that <code class="w3-codespan">cout</code> is used to output (print) values. Now we will use
+        <code class="w3-codespan">cin</code> to get user input.</p>
+    <p><code class="w3-codespan">cin</code> is a predefined variable that reads data from the keyboard with the extraction
+        operator (<code class="w3-codespan">>></code>).</p>
+    <p>In the following example, the user can input a number, which is stored in the
+        variable <code class="w3-codespan">x</code>. Then we print the value of <code class="w3-codespan">x</code>:</p>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <div class="w3-code notranslate javaHigh">
+            int x;&nbsp;<br>cout &lt;&lt; "Type a number: "; // Type a number and
+            press enter<br>cin &gt;&gt; x; // Get user
+            input from the keyboard<br>cout &lt;&lt; "Your number is: " &lt;&lt; x;
+            // Display the input value</div>
+        <a target="_blank" class="w3-btn w3-margin-bottom" href="showcpp.asp?filename=demo_user_input">Run example
+            &raquo;</a>
+    </div>
+    
+    <div class="w3-note w3-panel">
+        <h4>Good To Know</h4>
+        <p><code class="w3-codespan">cout</code> is pronounced "see-out". Used for <strong>output</strong>, and uses the
+            insertion operator (<code class="w3-codespan"><<</code>)</p>
+        <p><code class="w3-codespan">cin</code> is pronounced "see-in". Used for <strong>input</strong>, and uses the
+            extraction operator (<code class="w3-codespan">>></code>)</p>
+    </div>
+    <hr>
+    
+    <h2>Creating a Simple Calculator</h2>
+    <p>In this example, the user must input two numbers. Then we print the
+        sum by calculating (adding) the two numbers:</p>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <div class="w3-code notranslate javaHigh">
+            int x, y;<br>int sum;<br>cout &lt;&lt; &quot;Type a number: &quot;;<br>cin &gt;&gt; x;<br>cout &lt;&lt;
+            &quot;Type another number: &quot;;<br>cin &gt;&gt;
+            y;<br>sum = x + y;<br>cout &lt;&lt; &quot;Sum is: &quot; &lt;&lt; sum;</div>
+        <a target="_blank" class="w3-btn w3-margin-bottom" href="showcpp.asp?filename=demo_user_input2">Run example
+            &raquo;</a>
+    </div>
+    
+    <p>There you go! You just built a basic calculator!</p>
+    <hr>
+
+</body>
+</html>
